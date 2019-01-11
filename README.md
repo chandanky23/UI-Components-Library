@@ -30,6 +30,10 @@ According to scripts in package.json start your dev server
   using npm 
   >```npm run dev```
 
+* Application will be available on post 6060 *
+```
+localhost:6060
+```
 
 # To build the application
 Provide a build to your application
