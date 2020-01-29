@@ -1,10 +1,47 @@
-
-Raised and Flat Button Variants
+Default Button with default width
 
 ```js
+<Button />
+```
 
-<Button btnText='OUTLINE' handleClick= {() => console.log('clicked')} outline style={{marginRight: '10px'}}/>
-<Button btnText='ERROR' handleClick= {() => console.log('clicked')} error style={{marginRight: '10px'}}/>
-<Button btnText='SUCCESS' handleClick= {() => console.log('clicked')} success style={{marginRight: '10px'}}/>
-<Button btnText='USER COLOR' handleClick= {() => console.log('clicked')} color={'yellow'} style={{marginRight: '10px'}}/>
+Success Button Flat and Raised
+
+```js
+<div style={{ display: "flex", justifyContent: "space-around" }}>
+  <Button
+    variants="success"
+    type="flat"
+    btnText="FLAT"
+    handleClick={() => console.log("clicked flat")}
+    width="150px"
+  />
+  <Button
+    variants="success"
+    type="raised"
+    btnText="RAISED"
+    handleClick={() => console.log("clicked raised")}
+    width="150px"
+  />
+</div>
+```
+
+Error Button Flat and Raised
+
+```js
+<div style={{ display: "flex", justifyContent: "space-around" }}>
+  <Button
+    variants="error"
+    btnText="FLAT"
+    handleClick={() => console.log("clicked flat")}
+    type="flat"
+    width="150px"
+  />
+  <Button
+    variants="error"
+    btnText="RAISED"
+    handleClick={() => console.log("clicked raised")}
+    type="raised"
+    width="150px"
+  />
+</div>
 ```
